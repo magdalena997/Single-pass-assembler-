@@ -1,0 +1,22 @@
+
+Tabela realokacija
+Rel.data
+|    Offset|                      Tip|  Vrednost|
+|         9|                 R_386_32|         1|
+|        14|                 R_386_32|         1|
+|        16|                 R_386_32|         3|
+|        18|                 R_386_32|         4|
+
+Sadrzaj sekcija
+Sekcija:  data
+14 20 01 e3 fd bc 0a 14 00 02 00 00 00 00 91 ff 02 fe e8 03 02 00 00 00 00 00
+
+Tabela simbola
+|   RedniBr|       Ime|   Sekcija|   Pomeraj|  Velicina|       Tip|
+|         0|       UND|       UND|         0|         0|         L|
+|         1|      data|      data|         0|        26|         L|
+|         2|      equS|       UND|        20|         0|         L|
+|         3|      lab3|      data|        14|         0|         G|
+|         4|        ex|       UND|         0|         0|         G|
+|         5|      lab1|      data|         0|         0|         L|
+|         6|      lab2|      data|         2|         0|         L|

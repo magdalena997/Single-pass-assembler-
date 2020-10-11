@@ -1,0 +1,18 @@
+.global e
+.extern m
+.section magdalena
+.skip 4
+.text
+.byte a, b
+.data
+.word 5, c, b
+.bss
+.equ c, 0x0018+a+b-d
+a: .byte 24
+b: 
+.section magi
+jmp *m
+e: .word b, 0x1234, -541, m
+d:
+.skip 6
+.end

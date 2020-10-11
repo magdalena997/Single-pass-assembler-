@@ -1,0 +1,34 @@
+.equ m, 50
+.equ n, 0x0003+0x0015
+.global a, b
+.extern c, d
+.text
+.word 50, 0x1122
+.byte a, m
+a:
+l:
+.skip 5
+.section magdalena
+mul $0x100f, %r0
+mulb %r1h, (%r2)
+movb $0x0005, a(%r3)
+pop 30
+b: .byte 4
+call *b
+jmp 0x1234
+jeq *a(%pc)
+jne *l(%r7)
+.skip 3
+.data
+and a, b(%r7)
+ret
+magi:
+.byte a, -3
+.word m
+pushb 0x0012
+jmp *(%r5)
+shr m, $5
+.bss 
+.skip 5
+.end
+

@@ -1,0 +1,41 @@
+
+Tabela realokacija
+Rel.text
+|    Offset|                      Tip|  Vrednost|
+|         0|                 R_386_32|         4|
+|         1|                 R_386_32|         4|
+Rel.data
+|    Offset|                      Tip|  Vrednost|
+|         4|                 R_386_32|         4|
+Rel.magi
+|    Offset|                      Tip|  Vrednost|
+|         2|                 R_386_32|         7|
+|         4|                 R_386_32|         4|
+|         a|                 R_386_32|         7|
+
+Sadrzaj sekcija
+Sekcija:  magdalena
+00 00 00 00
+Sekcija:  text
+00 01
+Sekcija:  data
+05 00 0d 00 01 00
+Sekcija:  bss
+18
+Sekcija:  magi
+2c 80 00 00 01 00 34 12 e3 fd 00 00 00 00 00 00 00 00
+
+Tabela simbola
+|   RedniBr|       Ime|   Sekcija|   Pomeraj|  Velicina|       Tip|
+|         0|       UND|       UND|         0|         0|         L|
+|         1| magdalena| magdalena|         0|         4|         L|
+|         2|      text|      text|         0|         2|         L|
+|         3|      data|      data|         0|         6|         L|
+|         4|       bss|       bss|         0|         1|         L|
+|         5|      magi|      magi|         0|        18|         L|
+|         6|         e|      magi|         4|         0|         G|
+|         7|         m|       UND|         0|         0|         G|
+|         8|         a|       bss|         0|         0|         L|
+|         9|         b|       bss|         1|         0|         L|
+|        10|         c|       bss|        13|         0|         L|
+|        11|         d|      magi|        12|         0|         L|

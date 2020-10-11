@@ -1,0 +1,44 @@
+.equ eq, 70
+.equ kuku, 100
+.global xxx, aloha
+.extern yyy, zzz
+.data
+che: 
+  .word 100, 0xff
+label:
+ .byte 50, 0x38
+.section text
+pushb 20
+xxx:
+     or $0xf, %r0
+sub $67, eq(%r4)
+andb $0, voxx(%r2)
+far:
+     add yyy, %r3
+shrb 10(%r3), $10
+add $kuku, (%r5)
+cmp $far, xxx
+jgt *voxx
+jmp *dram
+push %r0
+call *prog
+dram:  
+     xor $0x11, zzz(%pc)
+aloha:
+     jmp *far
+add $100, vers(%r7)
+div far(%pc), (%r3) 
+prog:
+mul %r0, %r0
+add $100, che(%pc)
+shr che, %r0
+ret
+voxx:
+   test $0xFF, aloha
+jeq *far(%pc)
+.section moja
+vers:
+   .byte 100, -0x31
+.word prog, 333
+.skip 3
+.end
